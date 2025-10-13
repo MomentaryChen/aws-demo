@@ -30,7 +30,7 @@ REM 6️⃣ get all full events
 mkdir result\log
 awslocal logs filter-log-events ^
 --log-group-name /aws/lambda/localstack-lambda-url-example ^
---limit 100 > result/log/full-events-log.json
+--limit 1000 > result/log/full-events-log.json
 
 echo Done.
 endlocal

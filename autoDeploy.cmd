@@ -17,7 +17,7 @@ if errorlevel 1 (
 REM 3️⃣ 打包 Lambda
 echo Packing Lambda...
 REM 使用 7z -r 遞迴壓縮 dist 下所有檔案及 node_modules
-7z a -tzip dist\function.zip ./dist/* .env ./node_modules -r
+7z a -tzip dist\function.zip ./dist/* ./node_modules -r
 
 if errorlevel 1 (
     echo Zip failed!

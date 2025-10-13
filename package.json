@@ -6,7 +6,8 @@
         "build": "tsc",
         "start": "ts-node src/test/mockup.ts",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "test:local": "aws-lambda-local -l dist/handler.js -h hello -e event.json"
+        "test:local": "aws-lambda-local -l dist/handler.js -h hello -e event.json",
+        "test:dynamo": "ts-node src/test/db/UserRepoTest.ts"
     },
     "author": "",
     "license": "ISC",
@@ -19,6 +20,7 @@
         "typescript": "^5.9.3"
     },
     "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.908.0",
         "@aws-sdk/client-lambda": "^3.906.0",
         "mysql2": "^3.15.2"
     }
