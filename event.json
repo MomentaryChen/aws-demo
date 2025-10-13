@@ -1,0 +1,26 @@
+{
+  "resource": "/hello",
+  "path": "/hello",
+  "httpMethod": "GET",
+  "headers": {
+    "Accept": "application/json",
+    "Authorization": "Bearer exampletoken"
+  },
+  "queryStringParameters": {
+    "name": "John"
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "accountId": "123456789012",
+    "resourceId": "abcd12",
+    "stage": "dev",
+    "requestId": "c1234567-89ab-4def-1234-56789abcdef0",
+    "identity": {
+      "sourceIp": "127.0.0.1",
+      "userAgent": "Custom User Agent"
+    }
+  },
+  "body": null,
+  "isBase64Encoded": false
+}

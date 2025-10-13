@@ -1,0 +1,25 @@
+{
+    "name": "aws-demo",
+    "version": "1.0.0",
+    "main": "index.ts",
+    "scripts": {
+        "build": "tsc",
+        "start": "ts-node src/test/mockup.ts",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "test:local": "aws-lambda-local -l dist/handler.js -h hello -e event.json"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.155",
+        "@types/node": "^24.7.0",
+        "aws-lambda-local": "^2.0.6",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "@aws-sdk/client-lambda": "^3.906.0",
+        "mysql2": "^3.15.2"
+    }
+}
