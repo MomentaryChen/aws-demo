@@ -1,0 +1,9 @@
+config:
+  aws:accessKey: test
+  aws:secretKey: test
+  aws:region: us-west-2
+  aws:skipCredentialsCheck: true
+  aws:skipMetadataApiCheck: true
+  aws:skipRequestingAccountId: true
+  aws:s3UsePathStyle: true
+  aws:endpoint: http://localhost:4566
